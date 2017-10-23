@@ -1,4 +1,4 @@
-
+#======================================
 ANDROID APP:  MiniMoodle
 =======================================
 
@@ -8,9 +8,9 @@ Requirement: User must be connected to IIT-Bombay network.
 
 MiniMoodle app shows you all the posts, from the News Feed in your moodle, which have been made after the date and time you mentioned.
 
-1. Firstly, user need to login with his/her moodle ID and PASSWORD then it will redirected to next Activity(SubjectListActivity).
+1. Firstly, user need to login with his/her moodle ID and PASSWORD then it will redirected to next Activity,SubjectListActivity.
 2. In SubjectListActivity, there are two buttons for selecting date and time after which user wants to see the posts.
-   After selecting the date nd time, user will need to select the ssubject from the list, the post of which will be shown on the next Activity.
+   After selecting the date nd time, user will need to select the subject from the list, the post of which will be shown on the next Activity.
 3. NewsFeedActivity shows all the posts from the user's news feed which have been made after the date and time as selected by the user.
 4. There is a Logout option in the MenuOptions in the ActionBar in SubjectListActivity and NewsFeedActivty.
 ----------------------------------------
