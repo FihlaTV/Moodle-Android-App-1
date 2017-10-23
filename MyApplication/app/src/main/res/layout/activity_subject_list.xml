@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubjectListActivity"
+    android:background="#DCDCDC">
+
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="DATE"
+        android:layout_alignBaseline="@+id/date_btn"
+        android:layout_alignBottom="@+id/date_btn"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/date_btn"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/date"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:padding="12dp"
+        android:onClick="setDate"
+        android:text="Set Date"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="TIME"
+        android:layout_alignBaseline="@+id/time_btn"
+        android:layout_alignBottom="@+id/time_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/time_btn"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/time"
+        android:layout_below="@+id/date_btn"
+        android:gravity="right"
+        android:padding="12dp"
+        android:onClick="setTime"
+        android:text="Set Time"/>
+
+    <ListView
+        android:id="@+id/mobile_list"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/time_btn"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</RelativeLayout>
